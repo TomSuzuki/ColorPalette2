@@ -1,8 +1,8 @@
-# test1
+# ColorPallet2
 
-ƒ‰ƒ“ƒ_ƒ€‚ÌƒeƒXƒg
+è‰²ã€‚
 
-## ƒeƒXƒgƒT[ƒo[
+## ãƒ†ã‚¹ãƒˆã‚µãƒ¼ãƒãƒ¼
 
 ```
 python3 -m http.server 8000
