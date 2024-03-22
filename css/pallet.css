@@ -8,6 +8,7 @@
 }
 
 .frame {
+    z-index: 2;
     width: 16em;
     height: 8.5em;
     display: grid;
@@ -65,7 +66,7 @@
 
 .paint {
     background: #000000;
-    border-radius: 10%;
+    border-radius: 1px;
     height: 100%;
     width: 100%;
 }

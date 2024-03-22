@@ -13,6 +13,19 @@ p {
     margin: 0;
 }
 
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #144DA0;
+}
+
+a:hover,
+a:active {
+    opacity: .75;
+}
+
 #background {
     z-index: -999;
     position: fixed;
@@ -44,7 +57,7 @@ p {
 }
 
 #footer {
-    z-index: -1;
+    z-index: 0;
     position: sticky;
     bottom: 0;
     background-color: #111111;
