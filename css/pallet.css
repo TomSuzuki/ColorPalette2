@@ -1,0 +1,90 @@
+
+#content {
+    padding: 1em 3em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em 2em;
+}
+
+.frame {
+    width: 16em;
+    height: 8.5em;
+    display: grid;
+    grid-template-rows: 2fr 3fr 2fr;
+    padding: .5em;
+    border-radius: .5em;
+    border: 2px solid #EEFAFF;
+    background-color: rgba(255,255,255,.5);
+    backdrop-filter: blur(1px);
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, .4);
+}
+
+.title_frame {
+    width: 100%;
+    text-align: center;
+    display: block;
+    position: relative;
+}
+
+.title {
+    width: auto;
+    display: inline;
+    white-space: nowrap;
+    padding: 0 .5em;
+    font-size: x-large;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.pallet {
+    padding: .5em;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    gap: .4em;
+}
+
+.paint_frame {
+    padding: 0;
+    border: 2px solid #eeeeee;
+    width: 1.9em;
+    height: 1.9em;
+    border-radius: 10%;
+    display: block;
+}
+
+.paint_frame:hover {
+    cursor: pointer;
+    opacity: .5;
+}
+
+.paint {
+    background: #000000;
+    border-radius: 10%;
+    height: 100%;
+    width: 100%;
+}
+
+.color_code_frame {
+    text-align: center;
+    display: block;
+    position: relative;
+}
+
+.color_code {
+    font-size: large;
+    display: inline-block;
+    padding: .1em 1em;
+    border-radius: 12px;
+    transition : background-color 0.25s ease 0s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    border: 2px solid #eeeeee;
+}

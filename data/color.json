@@ -1,0 +1,137 @@
+{
+    "list": [
+        {
+            "title": "Paint",
+            "color": [
+                "#0000cd",
+                "#009900",
+                "#b22222",
+                "#ffff00",
+                "#9932cc"
+            ]
+        },
+        {
+            "title": "Marker",
+            "color": [
+                "#eef970",
+                "#0094d3",
+                "#7FFFD4",
+                "#ffbb5b",
+                "#f767d5",
+                "#bc53b3"
+            ]
+        },
+        {
+            "title": "Aquamarine Blue",
+            "color": [
+                "#40E0D0",
+                "#1E90FF"
+            ]
+        },
+        {
+            "title": "Milky",
+            "color": [
+                "#f7c3bf",
+                "#8ac8cf",
+                "#efebe0"
+            ]
+        },
+        {
+            "title": "Cool Blue",
+            "color": [
+                "#101841",
+                "#144da0",
+                "#70acce",
+                "#63a6db"
+            ]
+        },
+        {
+            "title": "Neon",
+            "color": [
+                "#F84DFB",
+                "#FEFF02",
+                "#FFF1A4",
+                "#D6F6F3",
+                "#A2FEFB",
+                "#FDFDFF"
+            ]
+        },
+        {
+            "title": "Hakodate",
+            "color": [
+                "#010005",
+                "#060E3D",
+                "#020B4C",
+                "#1543A3",
+                "#FBF88F",
+                "#FFFDFF"
+            ]
+        },
+        {
+            "title": "Sapporo",
+            "color": [
+                "#171312",
+                "#392F38",
+                "#3C3137",
+                "#473C42",
+                "#FFF8DE",
+                "#FFFEEE"
+            ]
+        },
+        {
+            "title": "Mikan",
+            "color": [
+                "#FC7A02",
+                "#F54700",
+                "#FA8E43",
+                "#FDC729",
+                "#FFBE30",
+                "#B0C715"
+            ]
+        },
+        {
+            "title": "Takoyaki",
+            "color": [
+                "#501300",
+                "#8BA450",
+                "#FBEDD3",
+                "#FCC58C",
+                "#E59D48",
+                "#D07C0C"
+            ]
+        },
+        {
+            "title": "Candy",
+            "color": [
+                "#FF7888",
+                "#FFA332",
+                "#32DBEE",
+                "#F4E242",
+                "#C4F08E",
+                "#E2E4D9"
+            ]
+        },
+        {
+            "title": "Ocean",
+            "color": [
+                "#0477A4",
+                "#00659C",
+                "#075E7C",
+                "#004787",
+                "#013088",
+                "#F1FBFD"
+            ]
+        },
+        {
+            "title": "System",
+            "color": [
+                "#6495ED",
+                "#6699FF",
+                "#EFEFEF",
+                "#DDDDDD",
+                "#444444",
+                "#111111"
+            ]
+        }
+    ]
+}
