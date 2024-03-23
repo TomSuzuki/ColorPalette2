@@ -30,7 +30,13 @@
     }
     
     100% {
-        display: none;
+        opacity: 0;
+        display: none !important;
+
+        /* display: none が効かない場合用 */
+        position: fixed; 
+        top: -999;
+        left: -999;
     }
 }
 
