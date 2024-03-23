@@ -162,6 +162,13 @@ window.addEventListener("load", async function () {
         changeColorCode(color_code_tag, color["color"][0]);
     }
 
+    // ダミーのフレームを入れる
+    for (let i = 0; i < 5; i++) {
+        var dummy = document.createElement("div");
+        dummy.classList.add("dummy_frame");
+        content.appendChild(dummy);
+    }
+
 });
 
 // カラーコード変更

@@ -57,7 +57,7 @@
 
 #content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(17.5em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
     gap: 1em;
     justify-items: center;
     align-items: center;
@@ -201,4 +201,9 @@
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
     border: 2px solid #eeeeee;
+}
+
+.dummy_frame {
+    height: 0;
+    width: 100%;
 }
