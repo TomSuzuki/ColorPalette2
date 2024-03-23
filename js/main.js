@@ -1,4 +1,85 @@
 
+// タグ制御クラス
+class TagControl {
+    constructor() {
+        this.tags = [];
+    }
+
+    // 制御するタグを追加する
+    addTag(name) {
+        name = name.toLocaleLowerCase();
+
+        // 同じタグがある場合は追加しない
+        var t = this.tags.find((v) => v.name == name);
+        if (t != undefined) return;
+
+        this.tags.push({
+            name: name,
+            is_select: false,
+        });
+    }
+
+    // タグの選択を切り替える
+    clickTag(name) {
+        name = name.toLocaleLowerCase();
+        var t = this.tags.find((v) => v.name == name);
+        t.is_select = !t.is_select;
+        return t.is_select;
+    }
+
+    // 有効な（選択中の）タグがあるかを確認する
+    hasValidTag() {
+        var t = this.tags.find((v) => v.is_select == true);
+        return !(t == undefined);
+    }
+}
+
+var tagControl = new TagControl();
+
+// タグをクリック
+function tagClick(name) {
+    var flg = tagControl.clickTag(name);
+    var elems = document.querySelectorAll(`.tag_${name.toLocaleLowerCase()}`);
+    var hasValidTag = tagControl.hasValidTag();
+    
+    // タグの付与
+    for(var elem of elems) {
+        // タグをつける
+        if (flg == true) {
+            elem.classList.add("tag_is_select");
+        }
+
+        // タグを外す
+        else {
+            elem.classList.remove("tag_is_select");
+        }
+    }
+
+    // 選択しているタグがある
+    if(hasValidTag == true) {
+        // 選択中を表示
+        var select_frames = document.querySelectorAll(".frame:has(.tag_is_select)");
+        for (var frame of select_frames) {
+            frame.classList.remove("frame_hidden");
+        }
+
+        // 未選択を非表示
+        var not_select_frames = document.querySelectorAll(".frame");
+        for (var frame of not_select_frames) {
+            if (frame.querySelector(".tag_is_select") != null) continue;
+            frame.classList.add("frame_hidden");
+        }
+    }
+
+    // 選択しているタグがない（全表示）
+    else {
+        var frames = document.querySelectorAll(".frame");
+        for(var frame of frames) {
+            frame.classList.remove("frame_hidden");
+        }
+    }
+}
+
 // 読み込み処理
 window.addEventListener("load", async function () {
     // 色ファイルを取得する
@@ -22,6 +103,10 @@ window.addEventListener("load", async function () {
             var tag = document.createElement("tag");
             tag.classList.add("tag");
             tag.innerText = `#${t.toLocaleLowerCase()}`;
+            tag.classList.add(`tag_${t.toLocaleLowerCase()}`);
+            tag.setAttribute("onclick", `tagClick("${t}");`);
+            tagControl.addTag(t);
+
             tag_frame.appendChild(tag);
         }
 

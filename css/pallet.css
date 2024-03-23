@@ -55,6 +55,10 @@
     background-position: right center;
 }
 
+.frame_hidden {
+    display: none;
+}
+
 .title_frame {
     width: 100%;
     text-align: center;
@@ -69,9 +73,10 @@
 }
 
 .tag {
+    user-select: none;
     font-size: small;
     padding: 0 .5em;
-    border-radius: .25em;
+    border-radius: .5em;
     background-color: #eee;
     opacity: .75;
     transition: opacity .15s ease 0s;
@@ -80,6 +85,12 @@
 .tag:hover {
     opacity: .3;
     cursor: pointer;
+}
+
+.tag_is_select {
+    transition: background-color 0.25s ease 0s; /* クラスをつけた時だけアニメーション */
+    background-color: rgb(76, 100, 233);
+    color: #fff;
 }
 
 .title {
