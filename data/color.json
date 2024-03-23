@@ -128,7 +128,7 @@
                 "#D07C0C"
             ],
             "tag": [
-                "city"
+                "food"
             ]
         },
         {
@@ -156,7 +156,8 @@
                 "#F1FBFD"
             ],
             "tag": [
-                "blue"
+                "blue",
+                "nature"
             ]
         },
         {
@@ -171,6 +172,192 @@
             ],
             "tag": [
                 "blue"
+            ]
+        },
+        {
+            "title": "Flower",
+            "color": [
+                "#00AE88",
+                "#00B8AA",
+                "#CF338B",
+                "#F53533",
+                "#F4DE33"
+            ],
+            "tag": [
+                "nature"
+            ]
+        },
+        {
+            "title": "Grayish",
+            "color": [
+                "#6699A0",
+                "#669999",
+                "#778C99",
+                "#878C90",
+                "#BB99A9",
+                "#B38899",
+                "#8D8D90"
+            ],
+            "tag": [
+                "gray"
+            ]
+        },
+        {
+            "title": "Metallic",
+            "color": [
+                "#C9C7BB",
+                "#C4C4B7",
+                "#D0CCCC",
+                "#BCBCB8",
+                "#B2B2AA"
+            ],
+            "tag": [
+                "gold",
+                "silver"
+            ]
+        },
+        {
+            "title": "Otaru",
+            "color": [
+                "#577E8F",
+                "#F8C935",
+                "#1B190C",
+                "#0B2442",
+                "#1E180C"
+            ],
+            "tag": [
+                "city"
+            ]
+        },
+        {
+            "title": "Sushi",
+            "color": [
+                "#DE7502",
+                "#883702",
+                "#D5958B",
+                "#DFC5A4",
+                "#DCDCDA"
+            ],
+            "tag": [
+                "food"
+            ]
+        },
+        {
+            "title": "Zangi",
+            "color": [
+                "#DEB685",
+                "#DDB367",
+                "#81553C"
+            ],
+            "tag": [
+                "food"
+            ]
+        },
+        {
+            "title": "Illumination",
+            "color": [
+                "#65D2FB",
+                "#FFE3BC",
+                "#FFFFDA",
+                "#88F4DA",
+                "#FFEDFF",
+                "#A082C8",
+                "#FFD8BC"
+            ],
+            "tag": [
+                "city",
+                "holiday"
+            ]
+        },
+        {
+            "title": "Ikura",
+            "color": [
+                "#C4510F",
+                "#A5440D",
+                "#B25131",
+                "#E3673E",
+                "#EB6B41",
+                "#F56F43",
+                "#A26F5C"
+            ],
+            "tag": [
+                "food"
+            ]
+        },
+        {
+            "title": "Kurage",
+            "color": [
+                "#B1B9F7",
+                "#97CAF7",
+                "#011B65",
+                "#031054"
+            ],
+            "tag": [
+                "holiday",
+                "blue"
+            ]
+        },
+        {
+            "title": "HDD",
+            "color": [
+                "#468E68",
+                "#64A384",
+                "#E9FCFF",
+                "#010E17",
+                "#D5D8D1"
+            ],
+            "tag": [
+                "silver"
+            ]
+        },
+        {
+            "title": "Corn Soup",
+            "color": [
+                "#E8CB54",
+                "#C4AE41",
+                "#BAA13C",
+                "#BCA33C",
+                "#625B24"
+            ],
+            "tag": [
+                "food"
+            ]
+        },
+        {
+            "title": "Asahikawa",
+            "color": [
+                "#6C86AB",
+                "#8EA3BD",
+                "#B2C4DC",
+                "#BFC2CB",
+                "#67653C"
+            ],
+            "tag": [
+                "city"
+            ]
+        },
+        {
+            "title": "Cube",
+            "color": [
+                "#F0208E",
+                "#018AFE",
+                "#D0D2C7"
+            ],
+            "tag": [
+                "holiday"
+            ]
+        },
+        {
+            "title": "Crystal",
+            "color": [
+                "#37EEFC",
+                "#11FFFA",
+                "#39E2FF",
+                "#FFB5FF",
+                "#AECFB4"
+            ],
+            "tag": [
+                "holiday"
             ]
         }
     ]
