@@ -57,8 +57,7 @@
 
 #content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
-    gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
     justify-items: center;
     align-items: center;
 }
@@ -71,6 +70,8 @@
     display: block;
     width: 100%;
     z-index: 2;
+    padding: 1em;
+    box-sizing: border-box;
 }
 
 .frame_frame:has(.frame_hidden) {
