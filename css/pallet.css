@@ -1,5 +1,5 @@
-
 @keyframes animation {
+
     0%,
     100% {
         transform: rotate(0deg) translateX(0%) translateY(0%);
@@ -28,13 +28,13 @@
         opacity: 0;
         height: 0;
     }
-    
+
     100% {
         opacity: 0;
         display: none !important;
 
         /* display: none が効かない場合用 */
-        position: fixed; 
+        position: fixed;
         top: -999;
         left: -999;
     }
@@ -82,6 +82,7 @@
     transform-origin: center bottom;
     /* animation: animation 5s ease-in-out infinite; */
 
+    position: relative;
     box-sizing: border-box;
     width: 100%;
     height: auto;
@@ -90,7 +91,7 @@
     padding: .5em;
     border-radius: .5em;
     backdrop-filter: blur(1px);
-    box-shadow: 3px 5px 10px rgba(0, 0, 0, .4);
+    box-shadow: 5px 8px 12px rgba(64, 64, 64, .4);
 
     background-image: linear-gradient(to right, rgba(255, 255, 255, .5) 0%, rgba(255, 255, 255, .3) 51%, rgba(255, 255, 255, .5) 100%);
     transition: background-size .3s, background-position .3s;
@@ -99,8 +100,29 @@
     animation: fadein .1s linear forwards !important;
 }
 
+.frame:has(.bg_image) {
+    background: none !important;
+}
+
+.bg_image {
+    background-size: 100%;
+    border-radius: .5em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .8;
+    transition: filter 0.25s ease 0s;
+}
+
 .frame:hover {
     background-position: right center;
+}
+
+.frame:hover .bg_image {
+    filter: blur(1px) contrast(105%) brightness(105%);
 }
 
 .frame_hidden {
@@ -112,6 +134,13 @@
     text-align: center;
     display: block;
     position: relative;
+}
+
+.bg_image~.title_frame .title {
+    background: none !important;
+    background-color: #fff !important;
+    border-radius: .25em;
+    opacity: .8;
 }
 
 .tag_frame {
@@ -136,7 +165,8 @@
 }
 
 .tag_is_select {
-    transition: background-color 0.25s ease 0s; /* クラスをつけた時だけアニメーション */
+    transition: background-color 0.25s ease 0s;
+    /* クラスをつけた時だけアニメーション */
     background-color: rgb(76, 100, 233);
     color: #fff;
 }
@@ -175,7 +205,7 @@
 
 .paint_frame:hover {
     cursor: pointer;
-    opacity: .5;
+    opacity: .75;
 }
 
 .paint {

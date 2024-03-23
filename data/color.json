@@ -282,7 +282,8 @@
             ],
             "tag": [
                 "food"
-            ]
+            ],
+            "image": "./data/image/ikura.jpg"
         },
         {
             "title": "Kurage",
@@ -321,7 +322,8 @@
             ],
             "tag": [
                 "food"
-            ]
+            ],
+            "image": "./data/image/corn_soup.jpg"
         },
         {
             "title": "Asahikawa",
@@ -358,7 +360,8 @@
             ],
             "tag": [
                 "holiday"
-            ]
+            ],
+            "image": "./data/image/crystal.jpg"
         }
     ]
 }

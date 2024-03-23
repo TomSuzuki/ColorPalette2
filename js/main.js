@@ -59,6 +59,14 @@ window.addEventListener("load", async () => {
         let frame = document.createElement("div");
         frame.classList.add("frame");
 
+        // 背景画像
+        if (color["image"] != undefined) {
+            let bg = document.createElement("div");
+            bg.classList.add("bg_image");
+            bg.style.backgroundImage = `url("${color["image"]}")`;
+            frame.appendChild(bg);
+        }
+
         let title_frame = document.createElement("div");
         title_frame.classList.add("title_frame");
 
