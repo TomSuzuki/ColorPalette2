@@ -12,13 +12,23 @@ window.addEventListener("load", async function () {
 
     // 生成
     for (var i in colors["list"]) {
+        var color = colors["list"][i];
         var color_code_tag = `color_code_${i}`;
 
-        var color = colors["list"][i];
+        var tag_frame = document.createElement("div");
+        tag_frame.classList.add("tag_frame");
+
+        for (var t of color["tag"]) {
+            var tag = document.createElement("tag");
+            tag.classList.add("tag");
+            tag.innerText = `#${t.toLocaleLowerCase()}`;
+            tag_frame.appendChild(tag);
+        }
+
         var pallet = document.createElement("div");
         pallet.classList.add("pallet");
 
-        for(var c of color["color"]) {
+        for (var c of color["color"]) {
             var pf = document.createElement("div");
             var pa = document.createElement("div");
             pf.classList.add("paint_frame");
@@ -53,6 +63,7 @@ window.addEventListener("load", async function () {
         title_frame.appendChild(title);
         color_code_frame.appendChild(color_code);
 
+        frame.appendChild(tag_frame);
         frame.appendChild(title_frame);
         frame.appendChild(pallet);
         frame.appendChild(color_code_frame);
@@ -78,10 +89,10 @@ function getTextColor(rgb) {
     let g = parseInt("0x" + rgb.substr(3, 2), 16);
     let b = parseInt("0x" + rgb.substr(5, 2), 16);
     let bk = Math.sqrt(
-      Math.pow(r - 0, 2) + Math.pow(g - 0, 2) + Math.pow(b - 0, 2)
+        Math.pow(r - 0, 2) + Math.pow(g - 0, 2) + Math.pow(b - 0, 2)
     );
     let wh = Math.sqrt(
-      Math.pow(r - 255, 2) + Math.pow(g - 255, 2) + Math.pow(b - 255, 2)
+        Math.pow(r - 255, 2) + Math.pow(g - 255, 2) + Math.pow(b - 255, 2)
     );
     return bk > wh ? "#000000" : "#FFFFFF";
 }
