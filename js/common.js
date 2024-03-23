@@ -29,3 +29,8 @@ function createXMLHttpRequest() {
     }
     return XMLhttpObject;
 }
+
+// getRandomInt ...ランダムな数値を取得します。
+function getRandomInt(min, max) {
+    return min + Math.floor(Math.random() * (max - min));
+}

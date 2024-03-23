@@ -1,3 +1,4 @@
+
 * {
     font-family: Consolas, "Courier New", Courier, Monaco, "メイリオ", "游ゴシック", monospace;
 }
@@ -37,6 +38,7 @@ a:active {
     background-image: linear-gradient(0deg, transparent 16px, #eaecf0 18px), linear-gradient(90deg, transparent 16px, #eaecf0 18px);
     background-color: #FAFDFF;
     background-size: 18px 18px;
+    filter: brightness(70%);
 }
 
 #header {
@@ -63,6 +65,7 @@ a:active {
     background-color: #111111;
     color: #FFFFFF;
     padding: 1em 2em;
+    box-sizing: border-box;
 }
 
 #footer .foot_copy {

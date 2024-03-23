@@ -29,8 +29,11 @@ window.addEventListener("load", async function () {
             pallet.appendChild(pf);
         }
 
+        var easing = ["linear", "ease", "ease-in", "ease-out", "ease-in-out"];
         var frame = document.createElement("div");
         frame.classList.add("frame");
+        frame.style.animation = `animation ${getRandomInt(5, 18)}s ${easing[getRandomInt(0, easing.length)]} infinite`;
+        frame.style.animationDelay = `${getRandomInt(0, 3)}s`;
 
         var title_frame = document.createElement("div");
         title_frame.classList.add("title_frame");
