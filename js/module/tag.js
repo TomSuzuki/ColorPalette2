@@ -1,6 +1,8 @@
 
+import * as common from "./common.js";
+
 // タグ制御クラス
-class TagControl {
+export class TagControl {
 
     // コンストラクタ
     constructor() {
@@ -41,25 +43,22 @@ class TagControl {
     }
 }
 
-// タグコントロールを生成
-const tagControl = new TagControl();
-
 // タグをクリック
-function tagClick(name) {
+export function tagClick(tagControl, name) {
     // タグの操作
     if (tagControl.clickTag(name)) {
-        addClassALL(`.tag_${name.toLocaleLowerCase()}`, "tag_is_select"); // タグの付与
+        common.addClassALL(`.tag_${name.toLocaleLowerCase()}`, "tag_is_select"); // タグの付与
     } else {
-        removeClassALL(`.tag_${name.toLocaleLowerCase()}`, "tag_is_select"); // タグの削除
+        common.removeClassALL(`.tag_${name.toLocaleLowerCase()}`, "tag_is_select"); // タグの削除
     }
 
     // 全体の操作
     if(tagControl.hasValidTag()) {
         // 選択しているタグがある
-        removeClassALL(".frame:has(.tag_is_select)", "frame_hidden");  // 選択中を表示
-        addClassALL(".frame:not(:has(.tag_is_select))", "frame_hidden");  // 未選択を非表示
+        common.removeClassALL(".frame:has(.tag_is_select)", "frame_hidden");  // 選択中を表示
+        common.addClassALL(".frame:not(:has(.tag_is_select))", "frame_hidden");  // 未選択を非表示
     } else {
         // 選択しているタグがない
-        removeClassALL(".frame", "frame_hidden");  // すべて表示
+        common.removeClassALL(".frame", "frame_hidden");  // すべて表示
     }
 }

@@ -1,13 +1,13 @@
 
-// カラーコード変更（HTMLのID, カラーコード）
-function changeColorCode(id, color) {
-    let elem = document.querySelector(`#${id}`);
-    elem.innerHTML = color.toUpperCase();
-    elem.style.backgroundColor = color;
-    elem.style.color = getTextColor(color);
+// changeColorCode ...カラーコードを変更します。（HTMLのID, カラーコード）
+export function changeColorCode(id, color) {
+    let element = document.querySelector(`#${id}`);
+    element.innerHTML = color.toUpperCase();
+    element.style.backgroundColor = color;
+    element.style.color = getTextColor(color);
 }
 
-// 文字色を生成（白 or 黒）
+// getTextColor ...文字色を生成します。（白 or 黒）
 function getTextColor(rgb) {
     let r = parseInt("0x" + rgb.substr(1, 2), 16);
     let g = parseInt("0x" + rgb.substr(3, 2), 16);
