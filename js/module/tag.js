@@ -41,6 +41,11 @@ export class TagControl {
         var t = this.tags.find((v) => v.is_select == true);
         return !(t == undefined);
     }
+
+    // 選択中のタグ名を配列で返す
+    validTags() {
+        return this.tags.filter((t) => t.is_select).map((t) => t.name);
+    }
 }
 
 // タグをクリック
@@ -53,10 +58,11 @@ export function tagClick(tagControl, name) {
     }
 
     // 全体の操作
-    if(tagControl.hasValidTag()) {
+    if (tagControl.hasValidTag()) {
         // 選択しているタグがある
-        common.removeClassALL(".frame:has(.tag_is_select)", "frame_hidden");  // 選択中を表示
-        common.addClassALL(".frame:not(:has(.tag_is_select))", "frame_hidden");  // 未選択を非表示
+        let selector = (tagControl.validTags()).reduce((ac, cu) => ac + `:has(.tag_${cu})`, ""); // 選択中のclassの一覧を生成
+        common.removeClassALL(`.frame${selector}`, "frame_hidden");  // 選択中を表示
+        common.addClassALL(`.frame:not(${selector})`, "frame_hidden");  // 未選択を非表示
     } else {
         // 選択しているタグがない
         common.removeClassALL(".frame", "frame_hidden");  // すべて表示
