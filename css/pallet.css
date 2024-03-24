@@ -57,7 +57,7 @@
 
 #content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20.5em, 1fr));
     justify-items: center;
     align-items: center;
 }
@@ -70,7 +70,7 @@
     display: block;
     width: 100%;
     z-index: 2;
-    padding: 1em;
+    padding: .7em;
     box-sizing: border-box;
 }
 

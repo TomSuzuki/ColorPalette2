@@ -101,7 +101,8 @@
             ],
             "tag": [
                 "city"
-            ]
+            ],
+            "image":"./data/image/sapporo.jpg"
         },
         {
             "title": "Mikan",
@@ -227,7 +228,8 @@
             ],
             "tag": [
                 "city"
-            ]
+            ],
+            "image": "./data/image/otaru.jpg"
         },
         {
             "title": "Sushi",
@@ -251,7 +253,8 @@
             ],
             "tag": [
                 "food"
-            ]
+            ],
+            "image":"./data/image/zangi.jpg"
         },
         {
             "title": "Illumination",
@@ -336,7 +339,8 @@
             ],
             "tag": [
                 "city"
-            ]
+            ],
+            "image":"./data/image/asahikawa.jpg"
         },
         {
             "title": "Cube",

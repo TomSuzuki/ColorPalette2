@@ -9,7 +9,15 @@ window.addEventListener("load", async () => {
     const tagControl = new tags.TagControl();
 
     // 色ファイルを取得する
-    const colors = await new Promise(r => common.loadTextFile("./data/color.json", (text) => { r(JSON.parse(text)) }));
+    let colors = await new Promise(r => common.loadTextFile("./data/color.json", (text) => { r(JSON.parse(text)) }));
+
+    // 自動生成タグを付与
+    colors["list"] = colors["list"].map((c) => {
+        if (c["image"] != undefined) {
+            c["tag"].push("photograph");
+        }
+        return c;
+    });
 
     // HTMLをリセット
     let content = document.querySelector("#content");
