@@ -115,6 +115,7 @@
     z-index: -1;
     opacity: .8;
     transition: filter 0.25s ease 0s;
+    background-position: center center;
 }
 
 .frame:hover {
@@ -201,6 +202,7 @@
     border-radius: 10%;
     display: block;
     transition: opacity 0.25s ease 0s;
+    user-select: none;
 }
 
 .paint_frame:hover {

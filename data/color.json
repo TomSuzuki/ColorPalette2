@@ -130,7 +130,8 @@
             ],
             "tag": [
                 "food"
-            ]
+            ],
+            "image":"./data/image/takoyaki.jpg"
         },
         {
             "title": "Candy",
@@ -299,7 +300,8 @@
             "tag": [
                 "holiday",
                 "blue"
-            ]
+            ],
+            "image":"./data/image/kurage.jpg"
         },
         {
             "title": "HDD",
@@ -366,6 +368,60 @@
                 "holiday"
             ],
             "image": "./data/image/crystal.jpg"
+        },
+        {
+            "title": "Kaminokuni",
+            "color": [
+                "#6D6960",
+                "#FEFFDB",
+                "#89DB9B",
+                "#A08C71",
+                "#372A00"
+            ],
+            "tag": [
+                "location",
+                "nature"
+            ],
+            "image": "./data/image/kaminokuni.jpg"
+        },
+        {
+            "title": "Noboribetu",
+            "color": [
+                "#6A8CAF",
+                "#83A5C8",
+                "#3F5639",
+                "#32495B"
+            ],
+            "tag": [
+                "location",
+                "nature"
+            ],
+            "image": "./data/image/noboribetu.jpg"
+        },
+        {
+            "title": "Asamushi",
+            "color": [
+                "#516973",
+                "#264152",
+                "#2F3D26",
+                "#C6DFDC"
+            ],
+            "tag": [
+                "location"
+            ],
+            "image": "./data/image/asamushi.jpg"
+        },
+        {
+            "title": "Banboo",
+            "color": [
+                "#797D62",
+                "#656661",
+                "#989779"
+            ],
+            "tag": [
+                "nature"
+            ],
+            "image": "./data/image/banboo.jpg"
         }
     ]
 }
