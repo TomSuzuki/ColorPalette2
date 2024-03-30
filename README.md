@@ -1,4 +1,4 @@
-# ColorPallet2
+# ColorPalette2
 
 色。
 

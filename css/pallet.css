@@ -185,7 +185,7 @@
     transform: translateY(-50%) translateX(-50%);
 }
 
-.pallet {
+.Palette {
     padding: .5em;
     display: flex;
     justify-content: center;

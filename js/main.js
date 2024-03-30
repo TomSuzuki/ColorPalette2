@@ -44,8 +44,8 @@ window.addEventListener("load", async () => {
             tag_frame.appendChild(tag);
         }
 
-        let pallet = document.createElement("div");
-        pallet.classList.add("pallet");
+        let Palette = document.createElement("div");
+        Palette.classList.add("Palette");
 
         for (let c of color["color"]) {
             let pf = document.createElement("div");
@@ -55,7 +55,7 @@ window.addEventListener("load", async () => {
             pa.style.backgroundColor = c;
             pf.addEventListener("click", () => design.changeColorCode(color_code_tag, c));
             pf.appendChild(pa);
-            pallet.appendChild(pf);
+            Palette.appendChild(pf);
         }
 
         const easing = ["linear", "ease", "ease-in", "ease-out", "ease-in-out"];
@@ -95,7 +95,7 @@ window.addEventListener("load", async () => {
 
         frame.appendChild(tag_frame);
         frame.appendChild(title_frame);
-        frame.appendChild(pallet);
+        frame.appendChild(Palette);
         frame.appendChild(color_code_frame);
 
         frame_frame.appendChild(frame);
